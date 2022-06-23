@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+body {
+    width: 100%;
+}
+
+#nav {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Koulen', cursive;
+    font-size: 2em;
+}
+
+#nav > div {
+    margin: 1em;
+}
+
+#navbar > div {
+    margin: 0 1em 0;
+}
+
+#content {
+    min-height: 100vh;
+    background: url("../img/background-image.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.custom-red-font {
+    color: #fff;
+    text-shadow:
+    0 0 2px #fff,
+    0 0 2px #fff,
+    0 0 2px #fff,
+    0 0 30px rgb(167, 7, 2),
+    0 0 30px rgb(167, 7, 2),
+    0 0 30px rgb(167, 7, 2),
+    0 0 5px rgb(167, 7, 2),
+    0 0 5px rgb(167, 7, 2);
+}
