@@ -26,6 +26,47 @@ body {
     background-size: cover;
 }
 
+.page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.page-body > * {
+    border-radius: 5px;
+}
+.page-body > header{
+    font-size: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.page-body > div {
+    margin: 1em 0em 1em;
+}
+
+.page-section{
+    background-color: rgba(167, 7, 2, 0.2);
+    text-align: center;
+    padding: 0.5em 0 0.5em;
+    width: 80%;
+    font-size: 1.25em;
+}
+
+.page-section > * {
+    margin: 0.5em;
+}
+
 .custom-red-font {
     color: #fff;
     text-shadow:

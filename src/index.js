@@ -33,9 +33,39 @@ function setupNavBar()
     return navbar;
 }
 
-function setupContent()
+function setupBody()
 {
     const content= document.createElement('div');
+    content.classList.add('page-body');
+    content.classList.add('page-text');
+
+    const header = document.createElement('header');
+    content.appendChild(header);
+    header.textContent = "Penny's Diner";
+
+
+    var divHeader = document.createElement('h4');
+    var divContent = document.createElement('p');
+    var resDesc = document.createElement('div');
+    resDesc.appendChild(divHeader);
+    resDesc.classList.add('page-section');
+    divContent.textContent = "Penny's has been around for 50 years serving all customers like its in the comfort of the home. Open all day and night during the weekday, we are open for daylight highwayman or midnight marauder."
+    resDesc.appendChild(divContent);
+    content.append(resDesc);
+
+    divHeader = document.createElement('h4');
+    divContent = document.createElement('p');
+    resDesc = document.createElement('div');
+    resDesc.appendChild(divHeader);
+    resDesc.classList.add('page-section');
+    divHeader.textContent = "Hours";
+    divContent.textContent = "Penny's has been around for 50 years serving all customers like its in the comfort of the home. Open all day and night during the weekday, we are open for daylight highwayman or midnight marauder."
+    resDesc.appendChild(divContent);
+    content.append(resDesc);
+
+
+
+
     //const description = document.createElement('div');
     //description.textContent = "Here at Rordon Gamsey's Couture, you will be treated with the the great dining experience  the world has to offer";
     //content.appendChild(description);
@@ -46,9 +76,9 @@ function setupContent()
 function setupInitialLanding()
 {
     const content = document.getElementById('content');
-    content.classList.add('background-img');
+    //content.classList.add('background-img');
     content.appendChild(setupNavBar());
-    content.appendChild(setupContent());
+    content.appendChild(setupBody());
 
     document.body.classList.add('test');
 }
