@@ -46,6 +46,7 @@ body {
     border-radius: 5px;
 }
 .page-body > header{
+    font-family: 'Koulen', cursive;
     font-size: 3em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -53,6 +54,10 @@ body {
 
 .page-body > div {
     margin: 1em 0em 1em;
+}
+
+.page-section > p {
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .page-section{
